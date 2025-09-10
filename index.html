@@ -1,10 +1,124 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>코딩 열공</title>
-  </head>
-  <body>
-    <h1>여기는 코딩크루입니다.</h1>
-    <p>저는 조재청입니다.</p>
-  </body>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>코딩크루의 홈페이지</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      background: #f5f8ff;
+      color: #333;
+    }
+
+    header {
+      background-color: #4a90e2;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .card {
+      flex: 1 1 200px;
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: #4a90e2;
+    }
+
+    .camping-section {
+      background: #e1f5fe;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #ddd;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8em;
+      }
+
+      .cards {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>안녕! 나는 코딩크루야 😊</h1>
+    <p>한아람초등학교 4학년 | 내가 좋아하는 걸 소개할게!</p>
+  </header>
+
+  <div class="container">
+    <section class="section">
+      <h2>🎮 내가 좋아하는 것들</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>로블록스 게임</h3>
+          <p>새로운 맵을 만들고 친구들이랑 플레이하는 게 정말 재밌어!</p>
+        </div>
+        <div class="card">
+          <h3>코딩 배우기</h3>
+          <p>코딩크루에서 재미있는 수업을 듣고 있어. 내가 만든 게임도 있어!</p>
+        </div>
+        <div class="card">
+          <h3>자전거 타기</h3>
+          <p>오늘도 자전거 타고 나왔어. 바람 맞으며 달리는 게 좋아!</p>
+        </div>
+        <div class="card">
+          <h3>맛있는 음식</h3>
+          <p>피자, 치킨, 연어까지! 못 먹는 게 없어서 건강해 💪</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section camping-section">
+      <h2>🏕️ 주말엔 가족과 캠핑!</h2>
+      <p>주말마다 텐트 치고, 불 피우고, 맛있는 것도 해 먹으면서 자연 속에서 놀아. 가족이랑 함께해서 더 즐거워!</p>
+    </section>
+  </div>
+
+  <footer>
+    <p>만든 사람: 코딩크루 | © 2025</p>
+  </footer>
+</body>
 </html>
